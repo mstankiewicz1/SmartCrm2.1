@@ -1,0 +1,805 @@
+* {
+    box-sizing: border-box;
+}
+
+.app {
+    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 54px;
+    background-color: #000000;
+}
+
+.crmName {
+    width: 20%;
+    height: 50px;
+    color: white;
+    float: left;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.crmName p {
+    margin: 0;
+}
+
+.searchContainer {
+    height: 50px;
+    width: 60%;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+}
+
+input.search {
+    display: block;
+    width: 240px;
+    height: 40px;
+    float: right;
+    background-color: white;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.logSection {
+    width: 20%;
+    height: 50px;
+    font-weight: bold;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.logSection p {
+    margin: 0;
+}
+
+.dataUser {
+    width: 100%;
+    height: 100px;
+}
+
+.dataPerson {
+    width: 33.3%;
+    height: 100px;
+    text-align: center;
+    float: left;
+    background-color: #DFDFDF;
+    color: #2D2D2D;
+    font-weight: bold;
+}
+
+.dataContact {
+    width: 33.3%;
+    height: 100px;
+    text-align: center;
+    float: left;
+    background-color: #DFDFDF;
+    color: #2D2D2D;
+    font-weight: bold;
+}
+
+.dataAccountNumber {
+    width: 33.3%;
+    height: 100px;
+    text-align: center;
+    float: left;
+    background-color: #DFDFDF;
+    color: #2D2D2D;
+    font-weight: bold;
+}
+
+.dataUserFromProps {
+    width: 100%;
+    height: 100px;
+}
+
+.dataPersonFromProps {
+    width: 33.3%;
+    height: 100px;
+    text-align: center;
+    float: left;
+    background-color: #DFDFDF;
+    color: #2D2D2D;
+    font-weight: bold;
+}
+
+.dataContactFromProps {
+    width: 33.3%;
+    height: 100px;
+    text-align: center;
+    float: left;
+    background-color: #DFDFDF;
+    line-height: 0.25cm;
+    color: #2D2D2D;
+    font-weight: bold;
+}
+
+.dataAccountNumberFromProps {
+    width: 33.3%;
+    height: 100px;
+    text-align: center;
+    float: left;
+    background-color: #DFDFDF;
+    color: #2D2D2D;
+    font-weight: bold;
+}
+
+.cleanDataUserFromProps button{
+    display: block;
+    width: 180px;
+    height: 40px;
+    vert-align: middle;
+    background-color: #55080A;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 600px;
+    border: 3px solid #EF1E21;
+    color: white;
+    font-weight: bold;
+}
+
+.cleanDataUserFromProps button:hover {
+    background-color: #EF1E21;
+    transition-duration: .5s;
+}
+
+.incomeSection {
+    width: 20%;
+    background-color: #1E1E1F;
+    float: right;
+    height: 76vh;
+}
+
+.financialData {
+    width: 100%;
+    height: 53%;
+    background-color: #1E1E1F;
+}
+
+.financialDataHeader {
+    width: 100%;
+    height: 37.5%;
+    background-color: #2D2D2D;
+    position: relative;
+}
+
+.financialDataHeaderSpan {
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #92784F;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.instrumentsSection {
+    width: 100%;
+    background-color: #1E1E1F;
+}
+
+
+.financialDataHeaderPortfolio {
+    width: 100%;
+    height: 15vh;
+    background-color: #2D2D2D;
+    position: relative;
+}
+
+.financialDataHeaderPortfolioSpan {
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #92784F;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#tableFinancialData, #tableInstrumentsData {
+    margin: auto;
+    font-weight: bold;
+}
+
+#tableFinancialData {
+    width: 100%;
+    padding-left: 3px;
+    font-size: 15px;
+}
+
+#tableInstrumentsData {
+    width: 100%;
+    padding-left: 3px;
+}
+
+.incomeSectionFromProps {
+    width: 20%;
+    background-color: #1E1E1F;
+    float: right;
+    height: 76vh;
+}
+
+.financialDataFromProps {
+    width: 100%;
+    height: 53%;
+    background-color: #1E1E1F;
+}
+
+.financialDataHeaderFromProps {
+    width: 100%;
+    height: 37.5%;
+    background-color: #2D2D2D;
+    position: relative;
+}
+
+.financialDataHeaderSpanFromProps {
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #92784F;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#tableFinancialDataFromProps {
+    width: 100%;
+    padding-left: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.instrumentsSectionFromProps {
+    width: 100%;
+    background-color: #1E1E1F;
+}
+
+.financialDataHeaderPortfolioFromProps {
+    width: 100%;
+    height: 15vh;
+    background-color: #2D2D2D;
+    position: relative;
+}
+
+.financialDataHeaderPortfolioSpanFromProps {
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #92784F;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+#tableInstrumentsDataFromProps {
+    width: 100%;
+    padding-left: 3px;
+    font-weight: bold;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\Lewa strona ////////////////////////*/
+
+.notesAndPreferencesUser {
+    width: 20%;
+    background-color: #2D2D2D;
+    float: left;
+    height: 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.PrivateNotesArea {
+    width: 80%;
+    height: 85%;
+    margin: 0;
+    background: #2D2D2D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.textAreaNotes {
+    width: 15.5vw;
+    height: 7vh;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.addPrivateNotesButton {
+    width: 98.5%;
+    height: 5vh;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 3px solid #92784F;
+    color: white;
+    background-color: #2D2D2D;
+}
+
+.addPrivateNotesButton:hover {
+    background-color: #92784F;
+    transition-duration: .5s;
+}
+
+.privateAreaBankNumber {
+    width: 85%;
+    height: 69%;
+    margin: 0;
+    background: #2D2D2D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.textAreaBankNumber {
+    width: 16.5vw;
+    height: 5vh;
+    text-align: center;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.addBankNumberButton {
+    width: 98.5%;
+    height: 5vh;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 3px solid #92784F;
+    color: white;
+    background-color: #2D2D2D;
+}
+
+.addBankNumberButton:hover {
+    background-color: #92784F;
+    transition-duration: .5s;
+}
+
+/*//////////// addActivityContainer /////////*/
+
+.addActivityContainer {
+    width: 60%;
+    background-color: #000000;
+    float: left;
+    height: 15vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.areaActivityButtons {
+    width: 80%;
+    margin: 0;
+    background: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.activityButtonsLeft {
+    width: 25%;
+    height: 6vh;
+    margin-right: 12.5%;
+    border: 3px solid #92784F;
+    color: white;
+    background-color: #2D2D2D;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.activityButtonsLeft:hover {
+    background-color: #92784F;
+    transition-duration: .5s;
+}
+
+.activityButtonsCenter {
+    width: 25%;
+    height: 6vh;
+    margin-right: 12.5%;
+    border: 3px solid #92784F;
+    color: white;
+    background-color: #2D2D2D;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.activityButtonsCenter:hover {
+    background-color: #92784F;
+    transition-duration: .5s;
+}
+
+.activityButtonsRight {
+    width: 25%;
+    height: 6vh;
+    border: 3px solid #92784F;
+    color: white;
+    background-color: #2D2D2D;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.activityButtonsRight:hover {
+    background-color: #92784F;
+    transition-duration: .5s;
+}
+
+.secondActivityContainer {
+    width: 60%;
+    background-color: #000000;
+    float: left;
+    height: 25vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/*///////////////////////////////*/
+
+.HistoryNotes {
+    width: 20%;
+    height: 25vh;
+    font-size: 0.95vw;
+    background-color: #1E1E1F;
+    float: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.singleParagraphNote {
+    line-height: 0.2cm;
+}
+
+.thirdActivityContainer {
+    width: 60%;
+    background-color: #000000;
+    float: left;
+    height: 15vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.HistoryBankNumbers {
+    margin-top: 101px;
+    margin-left: 0;
+    width: 20%;
+    background-color: #1E1E1F;
+    height: 21vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+h4, h3 {
+    font-weight: bold;
+}
+
+/*////////////// sprawy ////////////////////////*/
+
+.formIssues {
+    width: 100%;
+    background-color: #1E1E1F;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerIssues {
+    background-color: #2D2D2D;
+    width: 60vw;
+    height: 85vh;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p.headerAddIssues {
+    text-align: center;
+    color: white;
+}
+
+.titleIssues, .selectCategoryIssues, .caseArea, .addContactButton {
+    display: block;
+}
+
+input.titleIssues {
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 80%;
+    height: 7%;
+    margin-bottom: 10px;
+}
+
+.selectCategoryIssues {
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 80%;
+    height: 7%;
+    margin-bottom: 10px;
+}
+
+textarea.caseArea {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 80%;
+    height: 30%;
+    margin-bottom: 10px;
+}
+
+input.signCheckbox {
+    width: 20px;
+    height: 20px;
+    margin-left: 45%;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.important {
+    margin-left: 10px;
+    color: #EF1E21;
+}
+
+button.addIssueButton {
+    width: 120px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+button.addIssueButton:hover {
+    background-color: black;
+    color: white;
+    transition-duration: .5s;
+}
+
+
+
+    /*//////////////////koniec sprawy /////////////////////*/
+
+/*////////////////////////kontakty pocztek ///////////////*/
+
+.formContact {
+    width: 100%;
+    background-color: #1E1E1F;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerIssues {
+    background-color: #2D2D2D;
+    width: 60vw;
+    height: 85vh;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p.headerAddContact {
+    text-align: center;
+    color: white;
+}
+
+.titleContact, .selectCategoryContact, .contactArea, .addContactButton {
+    display: block;
+}
+
+input.titleContact {
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 80%;
+    height: 7%;
+    margin-bottom: 10px;
+}
+
+.selectCategoryContact {
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 80%;
+    height: 7%;
+    margin-bottom: 10px;
+}
+
+textarea.contactArea {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 80%;
+    height: 30%;
+    margin-bottom: 10px;
+}
+
+input.signCheckbox {
+    width: 20px;
+    height: 20px;
+    margin-left: 45%;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.important {
+    margin-left: 10px;
+    color: #EF1E21;
+}
+
+button.addContactButton {
+    width: 120px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+button.addContactButton:hover {
+    background-color: black;
+    color: white;
+    transition-duration: .5s;
+}
+
+
+
+
+
+/*///////////////////koniec kontakty /////////////////////*/
+
+/*//////////////////////start sprzedaz///////////////////*/
+
+.formSale {
+    width: 100%;
+    background-color: #1E1E1F;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerIssues {
+    background-color: #2D2D2D;
+    width: 60vw;
+    height: 85vh;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p.headerAddSale {
+    text-align: center;
+    color: white;
+}
+
+.titleSale, .selectCategorySale, .saleArea, .addSaleButton {
+    display: block;
+}
+
+input.titleSale {
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 80%;
+    height: 7%;
+    margin-bottom: 10px;
+}
+
+.selectCategorySale {
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 80%;
+    height: 7%;
+    margin-bottom: 10px;
+}
+
+textarea.saleArea {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 80%;
+    height: 30%;
+    margin-bottom: 10px;
+}
+
+input.signCheckbox {
+    width: 20px;
+    height: 20px;
+    margin-left: 45%;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.important {
+    margin-left: 10px;
+    color: #EF1E21;
+}
+
+button.addSaleButton {
+    width: 120px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+button.addSaleButton:hover {
+    background-color: black;
+    color: white;
+    transition-duration: .5s;
+}
+
+
+
+
